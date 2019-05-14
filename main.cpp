@@ -5,19 +5,19 @@
 #include<fstream>
 #include <sstream>
 #include <vector>
-#include "md5.h"
+#include <sha1.c>
 
 using namespace std;
 	
 string combinare(const vector<string>& combinare)
 {
-	int index = 0; 
+    int index = 1;
 	stringstream output;
 
 	while (1)
 	{
 		bool este=false;
-		for (int i = 0; i < combinare.size();i++)
+        for (int i = 1 i < combinare.size(); i++)
 		{
 			const string& cuvant = combinare[i];
 			if ( index < cuvant.size()  )
